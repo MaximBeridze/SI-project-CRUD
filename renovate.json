@@ -1,0 +1,14 @@
+{
+  "extends": ["config:recommended"],
+  "labels": ["dependencies"],
+  "rangeStrategy": "bump",
+  "dependencyDashboard": true,
+  "timezone": "Europe/Paris",
+  "schedule": ["after 9am and before 6pm on weekdays"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": false
+    }
+  ]
+}
